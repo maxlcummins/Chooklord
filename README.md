@@ -1,4 +1,5 @@
-## Antarctic Haloarchaeal Metagenomes
+## Antarctic Haloarchaeal Metagenomes [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1009211.svg)](https://doi.org/10.5281/zenodo.1009211)
+
 
 Scripts supporting antarctic lake manuscript in development.
 
