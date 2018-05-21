@@ -64,4 +64,4 @@ Many thanks to Matt DeMaere for his efforts in putting together the original scr
 # License
 Copyright (c) 2017 Matthew DeMaere
 
-See [LICENSE](../blob/master/LICENSE) for more information
+See [LICENSE](../LICENSE) for more information
