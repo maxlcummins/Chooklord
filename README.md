@@ -17,7 +17,9 @@ bwa index pCERC4_KU578032.fasta
 ## BWA mem
 A for loop was used to feed read pairs into an executable 'bwa.qsub'.
 ```
-for ((i=0; i<${#array[@]}; i+=2)); do qsub -v REF=pCERC4_KU578032.fasta,R1=${array[i]},R2=${array[i+1]},OUT=${array[i]%R1_001.fastq.gz} bwa.qsub; done
+for ((i=0; i<${#array[@]}; i+=2));
+do qsub -v REF=pCERC4_KU578032.fasta,R1=${array[i]},R2=${array[i+1]},OUT=${array[i]%R1_001.fastq.gz} bwa.qsub;
+done
 ```
 'bwa.qsub' contained, along with the appropriate job submission syntax, the following
 ```
@@ -26,7 +28,9 @@ bwa mem -t16 -MY $REF $R1 $R2 | samtools view -ubS -F 0x904 - | samtools sort -@
 ```
 ## SAMtools depth 
 ```
-for fn in `ls ./*.bam`; do samtools depth ${fn} > ${fn%.bam}_coverage.txt; done
+for fn in `ls ./*.bam`;
+do samtools depth ${fn} > ${fn%.bam}_coverage.txt;
+done
 ```
 ## Heatmap generation
 Here the binsize and ticksize were 250 and 100, respectively.
