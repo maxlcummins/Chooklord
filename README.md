@@ -21,7 +21,11 @@ The reference used was pCERC4 (Accession No. KU578032.1).
 ```
 bwa index pCERC4_KU578032.fasta
 ```
-
+## Array definition
+An array was defined as below to facilitate the subsequent step
+```
+array=($(ls read_directory/*.fastq.gz))
+```
 ## BWA mem
 A for loop was used to feed read pairs into an executable 'bwa.qsub'.
 ```
