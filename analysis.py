@@ -116,8 +116,6 @@ def run_hclust(outname, meds, bins, step_size, tick_spc, use_polo=True, save_plo
     metric = 'correlation'
     method = 'complete'
 
-# try euclidian metric
-
     # calculate
     Y = linkage(D, method=method, metric=metric)
 
