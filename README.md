@@ -1,12 +1,15 @@
 # Avian Plasmid Read-Mapping Plot
 
-NOTE: This script has been modified from a pre-existing script available at <https://github.com/cerebis/antarctic_ha>.
+**NOTE: This script has been modified from a pre-existing script available at <https://github.com/cerebis/antarctic_ha>**
+
 
 
 It contains scripts supporting an investigation into Avian Pathogenic Escherichia coli.
 
 
+
 Paper available at: ~~URL-to-paper-here~~
+
 
 
 
@@ -50,3 +53,11 @@ python ~/readdepth_plot/readdepth_plot.py -b <binsize> -t <ticksize> pCERC4_KU57
 * pandas - 0.20.3
 * samtools - 0.1.18
 * scipy - 0.19.1
+
+# Acknowledgements
+Many thanks to Matt DeMaere for his efforts in putting together the original script and helping to adapt and repurpose it for our investigation.
+
+# License
+Copyright (c) 2017 Matthew DeMaere
+
+See LICENSE[https://github.com/maxlcummins/antarctic_ha/master/LICENSE]
