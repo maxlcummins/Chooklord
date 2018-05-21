@@ -23,7 +23,6 @@ done
 ```
 'bwa.qsub' contained, along with the appropriate job submission syntax, the following
 ```
-
 bwa mem -t16 -MY $REF $R1 $R2 | samtools view -ubS -F 0x904 - | samtools sort -@8 -T $REF - -o ${R1}.bam           
 ```
 ## SAMtools depth 
@@ -38,12 +37,11 @@ Here the binsize and ticksize were 250 and 100, respectively.
 ```
 python ~/readdepth_plot/readdepth_plot.py -b <binsize> -t <ticksize> pCERC4_KU578032.fasta Heatmap_plot.pdf
 ```
-
-
-
-bwa                       0.7.17               pl5.22.0_0    bioconda
-samtools                  0.1.18                        0    bioconda
-pandas                    0.20.3           py27h820b67f_2 
-numpy                     1.13.3           py27hbcc08e0_0  
-scipy                     0.19.1           py27h1edc525_3
-matplotlib                2.1.0            py27h09aba24_0
+# Python and Package versions
+* Python 2.7
+* bwa - 0.7.17
+* matplotlib - 2.1.0
+* numpy - 1.13.3
+* pandas - 0.20.3
+* samtools - 0.1.18
+* scipy - 0.19.1
