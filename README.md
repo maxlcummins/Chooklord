@@ -2,11 +2,16 @@
 
 NOTE: This script has been modified from a pre-existing script available at <https://github.com/cerebis/antarctic_ha>.
 
+
 It contains scripts supporting an investigation into Avian Pathogenic Escherichia coli.
 
-Paper available at:
+
+Paper available at: ~~URL-to-paper-here~~
+
+
 
 The python script 'analysis.py' was used to produce the described heatmap:
+
 
 ## BWA Index
 The reference used was pCERC4 (Accession No. KU578032.1).
