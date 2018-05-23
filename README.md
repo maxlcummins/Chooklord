@@ -13,7 +13,7 @@ Paper available at: ~~URL-to-paper-here~~
 
 
 
-The python script 'analysis.py' was used to produce the described heatmap:
+The python script 'chooklord.py' was used to produce the described heatmap:
 
 
 ## BWA Index
