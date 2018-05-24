@@ -113,7 +113,7 @@ def run_hclust(outname, meds, bins, step_size, tick_spc, use_polo=True, save_plo
 
     # clustering options. We will use correlation as measure of distance
     # and complete linkage clustering
-    metric = 'correlation'
+    metric = 'euclidean'
     method = 'complete'
 
     # calculate
