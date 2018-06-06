@@ -47,7 +47,7 @@ done
 Here the binsize and ticksize were 250 and 100, respectively.
 
 ```
-python ~/readdepth_plot/readdepth_plot.py -b <binsize> -t <ticksize> pCERC4_KU578032.fasta Heatmap_plot.pdf
+python chooklord.py -b <binsize> -t <ticksize> pCERC4_KU578032.fasta Heatmap_plot.pdf
 ```
 # Python and Package versions
 * Python 2.7
