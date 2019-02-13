@@ -63,6 +63,13 @@ def get_block_medians(glob_path, step_size):
 
         data = pd.read_csv(fn, delimiter='\t', names=['_', 'x', 'depth'])
         data = data.as_matrix()[:, 1:]
+        for row in data:
+            if row[1] < 10:
+                row[1] = 0
+            elif row[1] >= 10:
+                row[1] = 1
+            else:
+                print(row)
         m, b = binning(data, step_size)
         meds.append(m)
         bins.append(b)
@@ -106,9 +113,10 @@ def run_hclust(outname, meds, bins, step_size, tick_spc, use_polo=True, save_plo
 
     # normalise rows by their median value
     D = meds.as_matrix().T
-    #D = (D.T/np.median(D, 1)).T
+
+#    D = (D.T/np.median(D, 1)).T
     # center rows on their medians
-    #D = (D.T - np.median(D, 1)).T
+#    D = (D.T - np.median(D, 1)).T
     
 
     # clustering options. We will use correlation as measure of distance
@@ -122,7 +130,7 @@ def run_hclust(outname, meds, bins, step_size, tick_spc, use_polo=True, save_plo
     # additionally, find optimal leaf ordering
     if use_polo:
         import polo
-        print('\tcalculating optimal leaf ordering...')
+        print '\tcalculating optimal leaf ordering...'
         Y = polo.optimal_leaf_ordering(Y, pdist(D, metric=metric))
 
     # now we do some plotting
