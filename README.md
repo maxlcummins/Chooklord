@@ -4,11 +4,11 @@
 
 
 
-It contains scripts supporting an investigation into Avian Pathogenic Escherichia coli.
+It contains scripts supporting an investigation titled - "Whole genome sequence analysis of Australian avian pathogenic Escherichia coli that carry the class 1 integrase gene"
 
 
 
-Paper available at: ~~URL-to-paper-here~~
+Paper available [here](https://mgen.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000250?fbclid=IwAR2WYZFZVR3B_h4207ndDaOoqoh48oxRt1iXoMUK2SFD7CKlgp7MSa9GIuE)
 
 
 
